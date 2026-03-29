@@ -148,14 +148,17 @@ a:hover {
 }
 
 .nav__cta {
-  background: var(--color-accent);
-  color: var(--color-dark) !important;
+  background: #e8631e;
+  color: #fff !important;
   border-radius: var(--radius-sm);
   padding: var(--space-2) var(--space-4) !important;
+  font-weight: 600;
+  transition: background var(--transition-interactive), transform var(--transition-interactive);
 }
 .nav__cta:hover {
-  background: var(--color-accent-hover) !important;
-  color: var(--color-dark) !important;
+  background: #d45518 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
 }
 
 .header__actions {
