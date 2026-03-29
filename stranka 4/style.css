@@ -1236,11 +1236,11 @@ a.offer-card:hover .offer-card__cta {
   flex-direction: column;
   gap: var(--space-4);
   min-width: 0;
+  overflow: hidden;
 }
 
 .listing-card__head {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   gap: var(--space-4);
   flex-wrap: wrap;
@@ -1251,6 +1251,7 @@ a.offer-card:hover .offer-card__cta {
   font-size: var(--text-lg);
   font-weight: 700;
   color: var(--color-text);
+  flex: 1;
   min-width: 0;
 }
 
