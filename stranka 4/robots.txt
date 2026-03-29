@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://skusobna.netlify.app/sitemap.xml
+Sitemap: https://lubomir2005.github.io/moja-stranka/sitemap.xml
