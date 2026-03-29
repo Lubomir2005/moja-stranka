@@ -1235,6 +1235,7 @@ a.offer-card:hover .offer-card__cta {
   display: flex;
   flex-direction: column;
   gap: var(--space-4);
+  min-width: 0;
 }
 
 .listing-card__head {
@@ -1250,6 +1251,7 @@ a.offer-card:hover .offer-card__cta {
   font-size: var(--text-lg);
   font-weight: 700;
   color: var(--color-text);
+  min-width: 0;
 }
 
 .listing-card__price {
