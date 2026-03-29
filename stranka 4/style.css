@@ -1023,9 +1023,11 @@ a.offer-card:hover .offer-card__cta {
 }
 
 .offer-card__cta svg {
+  display: inline-block;
   width: 14px;
   height: 14px;
   flex-shrink: 0;
+  vertical-align: middle;
 }
 
 /* === LISTING HERO === */
@@ -1133,19 +1135,19 @@ a.offer-card:hover .offer-card__cta {
   border: 1px solid var(--color-border);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 300px 1fr;
   transition: box-shadow var(--transition-interactive),
               border-color var(--transition-interactive);
 }
 
 .listing-card:hover {
   box-shadow: var(--shadow-lg);
-  border-color: oklch(from var(--color-accent) l c h / 0.3);
 }
 
 .listing-card__photo {
   position: relative;
   background: var(--color-surface-offset);
+  min-height: 240px;
 }
 
 .listing-card__photo img {
@@ -1156,9 +1158,8 @@ a.offer-card:hover .offer-card__cta {
 }
 
 .listing-card__placeholder {
-  width: 100%;
-  height: 100%;
-  min-height: 220px;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1169,7 +1170,10 @@ a.offer-card:hover .offer-card__cta {
 }
 
 .listing-card__placeholder svg {
+  display: block;
   opacity: 0.4;
+  width: 48px;
+  height: 48px;
 }
 
 .listing-card__placeholder span {
