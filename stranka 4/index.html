@@ -15,6 +15,39 @@
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.ico">
   <link rel="apple-touch-icon" href="./assets/favicon.ico">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Agrostav a.s.",
+    "description": "Prenájom kancelárskych priestorov, výrobných hál, skladov a parkovacích miest v Senici, región Záhorie.",
+    "url": "https://lubomir2005.github.io/moja-stranka/",
+    "telephone": "+421346514421",
+    "email": "posta@agrostav.sk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Štefánikova 714",
+      "addressLocality": "Senica",
+      "postalCode": "905 01",
+      "addressCountry": "SK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.6813664,
+      "longitude": 17.3831849
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "16:00"
+      }
+    ],
+    "vatID": "SK2020376259",
+    "taxID": "31419623"
+  }
+  </script>
 </head>
 <body>
 
@@ -36,7 +69,7 @@
       <a href="#gallery" class="nav__link">Galéria</a>
       <a href="#advantages" class="nav__link">Výhody</a>
       <a href="#about" class="nav__link">O nás</a>
-      <a href="#contact" class="nav__link">Kontakt</a>
+      <a href="#contact" class="nav__link nav__cta">Kontaktujte nás</a>
     </nav>
 
     <div class="header__actions">
@@ -202,34 +235,26 @@
           <span>Areál spoločnosti</span>
         </div>
       </div>
+      <div class="gallery__item reveal" data-gallery-item tabindex="0" role="button" aria-label="Zobraziť fotografiu — Pohľad na areál Agrostav">
+        <img src="./assets/areal.webp" alt="Pohľad na areál Agrostav a.s. v Senici" loading="lazy" width="600" height="400">
+        <div class="gallery__item-overlay">
+          <span>Výrobná zóna areálu</span>
+        </div>
+      </div>
       <div class="gallery__item gallery__item--placeholder reveal">
         <div class="gallery__placeholder">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="2"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="6" y="10" width="36" height="32" rx="2"/><rect x="14" y="18" width="8" height="6" rx="1"/><rect x="26" y="18" width="8" height="6" rx="1"/><path d="M18 6v4M30 6v4"/><line x1="6" y1="14" x2="42" y2="14"/>
           </svg>
           <span>Fotky kancelárií — pripravujeme</span>
         </div>
       </div>
       <div class="gallery__item gallery__item--placeholder reveal">
         <div class="gallery__placeholder">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="2"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
+          <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="4" y="14" width="40" height="28" rx="2"/><path d="M4 14L24 4l20 10"/><rect x="12" y="22" width="10" height="8" rx="1"/><rect x="26" y="22" width="10" height="8" rx="1"/>
           </svg>
-          <span>Fotky výrobných hál — pripravujeme</span>
-        </div>
-      </div>
-      <div class="gallery__item gallery__item--placeholder reveal">
-        <div class="gallery__placeholder">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <rect x="3" y="3" width="18" height="18" rx="2"/>
-            <circle cx="8.5" cy="8.5" r="1.5"/>
-            <path d="M21 15l-5-5L5 21"/>
-          </svg>
-          <span>Fotky skladov — pripravujeme</span>
+          <span>Fotky hál a skladov — pripravujeme</span>
         </div>
       </div>
     </div>
@@ -382,6 +407,18 @@
           <div class="contact__detail-content">
             <h3>E-mail</h3>
             <p><a href="mailto:posta@agrostav.sk">posta@agrostav.sk</a></p>
+          </div>
+        </div>
+
+        <div class="contact__detail">
+          <svg class="contact__detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <div class="contact__detail-content">
+            <h3>Otváracie hodiny</h3>
+            <p>Pondelok – Piatok: 8:00 – 16:00</p>
+            <p>Sobota – Nedeľa: Zatvorené</p>
           </div>
         </div>
 
