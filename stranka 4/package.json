@@ -1,0 +1,9 @@
+{
+  "name": "agrostav-website",
+  "version": "1.0.0",
+  "description": "Webová stránka Agrostav a.s. Senica — prenájom komerčných priestorov",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
