@@ -147,6 +147,17 @@ a:hover {
   background: oklch(from var(--color-accent) l c h / 0.08);
 }
 
+.nav__cta {
+  background: var(--color-accent);
+  color: var(--color-dark) !important;
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4) !important;
+}
+.nav__cta:hover {
+  background: var(--color-accent-hover) !important;
+  color: var(--color-dark) !important;
+}
+
 .header__actions {
   display: flex;
   align-items: center;
@@ -925,7 +936,6 @@ a:hover {
 
 .gallery__item--placeholder {
   cursor: default;
-  border: 2px dashed var(--color-border);
   background: var(--color-surface-offset);
 }
 
@@ -939,6 +949,12 @@ a:hover {
   color: var(--color-text-faint);
   text-align: center;
   padding: var(--space-4);
+}
+
+.gallery__placeholder svg {
+  display: block;
+  opacity: 0.35;
+  color: var(--color-accent);
 }
 
 .gallery__placeholder span {

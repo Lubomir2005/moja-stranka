@@ -140,7 +140,7 @@
   });
 })();
 
-// === Contact Form Handler (Netlify Forms AJAX) ===
+// === Contact Form Handler (mailto) ===
 (function () {
   var form = document.getElementById('contactForm');
   if (!form) return;
@@ -149,44 +149,26 @@
     e.preventDefault();
     var btn = form.querySelector('.btn-submit');
     var originalText = btn.innerHTML;
-    btn.innerHTML = 'Odosielanie...';
-    btn.disabled = true;
 
-    var formData = new FormData(form);
+    var name = (form.querySelector('[name="name"]') || {}).value || '';
+    var email = (form.querySelector('[name="email"]') || {}).value || '';
+    var message = (form.querySelector('[name="message"]') || {}).value || '';
 
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString()
-    })
-    .then(function (response) {
-      if (response.ok) {
-        btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Správa odoslaná';
-        btn.style.background = '#437a22';
-        setTimeout(function () {
-          btn.innerHTML = originalText;
-          btn.disabled = false;
-          btn.style.background = '';
-          form.reset();
-        }, 2500);
-      } else {
-        btn.innerHTML = 'Chyba pri odosielaní';
-        btn.style.background = '#c0392b';
-        setTimeout(function () {
-          btn.innerHTML = originalText;
-          btn.disabled = false;
-          btn.style.background = '';
-        }, 2500);
-      }
-    })
-    .catch(function () {
-      btn.innerHTML = 'Chyba pri odosielaní';
-      btn.style.background = '#c0392b';
-      setTimeout(function () {
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-        btn.style.background = '';
-      }, 2500);
-    });
+    var subject = encodeURIComponent('Záujem o prenájom — ' + name);
+    var body = encodeURIComponent(
+      'Meno: ' + name + '\n' +
+      'E-mail: ' + email + '\n\n' +
+      'Správa:\n' + message
+    );
+
+    window.location.href = 'mailto:posta@agrostav.sk?subject=' + subject + '&body=' + body;
+
+    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Otvára sa e-mailový klient…';
+    btn.style.background = '#437a22';
+    setTimeout(function () {
+      btn.innerHTML = originalText;
+      btn.style.background = '';
+      form.reset();
+    }, 4000);
   });
 })();
