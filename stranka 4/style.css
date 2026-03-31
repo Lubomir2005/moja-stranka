@@ -435,6 +435,48 @@ a:hover {
   background: var(--color-surface-offset);
 }
 
+/* === CLIENTS / DÔVERUJÚ NÁM === */
+.clients {
+  background: var(--color-dark);
+  padding-block: var(--space-10);
+  border-top: 1px solid rgba(196, 154, 60, 0.15);
+}
+
+.clients__label {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-8);
+}
+
+.clients__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.clients__logo-item {
+  width: 120px;
+  color: var(--color-text-faint);
+  opacity: 0.6;
+  transition: opacity var(--transition-interactive);
+}
+
+.clients__logo-item:hover {
+  opacity: 1;
+}
+
+.clients__logo-item svg {
+  width: 100%;
+  height: auto;
+}
+
 /* === OFFER / PONUKA === */
 .offer {
   padding-block: clamp(var(--space-16), 8vw, var(--space-32));
