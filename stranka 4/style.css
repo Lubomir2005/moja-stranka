@@ -2,7 +2,7 @@
 
 /* === FONTS === */
 :root {
-  --font-display: 'Cabinet Grotesk', 'Arial Black', sans-serif;
+  --font-display: 'Cabinet Grotesk', system-ui, sans-serif;
   --font-body: 'General Sans', 'Helvetica Neue', sans-serif;
 }
 
