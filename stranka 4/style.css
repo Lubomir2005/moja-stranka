@@ -437,20 +437,17 @@ a:hover {
 
 /* === CLIENTS / DÔVERUJÚ NÁM === */
 .clients {
-  background: var(--color-dark);
+  background: #3a3835;
   padding-block: var(--space-12);
   border-top: 1px solid rgba(196, 154, 60, 0.15);
   border-bottom: 1px solid rgba(196, 154, 60, 0.15);
 }
 
 .clients__label {
+  display: block;
+  width: 100%;
   text-align: center;
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-text-faint);
+  max-width: none;
   margin-bottom: var(--space-8);
 }
 
