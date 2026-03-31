@@ -167,21 +167,6 @@ a:hover {
   gap: var(--space-2);
 }
 
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-md);
-  color: var(--color-text-muted);
-  transition: color var(--transition-interactive),
-              background var(--transition-interactive);
-}
-.theme-toggle:hover {
-  color: var(--color-text);
-  background: oklch(from var(--color-accent) l c h / 0.08);
-}
 
 /* Mobile menu button */
 .menu-toggle {
@@ -548,9 +533,6 @@ a:hover {
   font-weight: 600;
 }
 
-[data-theme="dark"] .offer-card__detail-value--available {
-  color: #6dbf3a;
-}
 
 /* Subtle corner accent on card */
 .offer-card::after {
@@ -1234,7 +1216,6 @@ a.offer-card:hover .offer-card__cta {
   color: #fff;
 }
 
-[data-theme="dark"] .listing-card__status--available { background: #4e9228; }
 
 .listing-card__body {
   padding: var(--space-8);
