@@ -438,8 +438,9 @@ a:hover {
 /* === CLIENTS / DÔVERUJÚ NÁM === */
 .clients {
   background: var(--color-dark);
-  padding-block: var(--space-10);
+  padding-block: var(--space-12);
   border-top: 1px solid rgba(196, 154, 60, 0.15);
+  border-bottom: 1px solid rgba(196, 154, 60, 0.15);
 }
 
 .clients__label {
@@ -447,7 +448,7 @@ a:hover {
   font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-faint);
   margin-bottom: var(--space-8);
@@ -458,23 +459,21 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--space-6);
+  gap: var(--space-5);
 }
 
 .clients__logo-item {
-  width: 120px;
-  color: var(--color-text-faint);
-  opacity: 0.6;
-  transition: opacity var(--transition-interactive);
+  width: 160px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  transition: border-color var(--transition-interactive), background var(--transition-interactive);
 }
 
 .clients__logo-item:hover {
-  opacity: 1;
-}
-
-.clients__logo-item svg {
-  width: 100%;
-  height: auto;
+  border-color: rgba(196, 154, 60, 0.4);
+  background: rgba(196, 154, 60, 0.06);
 }
 
 /* === OFFER / PONUKA === */
