@@ -109,7 +109,7 @@ a, button, [role="button"], [role="link"], input, textarea, select {
 /* === AGROSTAV CUSTOM PALETTE — Industrial / Property Management === */
 /* Dark charcoal + warm amber/gold accent */
 
-:root, [data-theme="light"] {
+:root {
   --color-bg:             #f5f4f0;
   --color-surface:        #ffffff;
   --color-surface-2:      #fafaf8;
@@ -135,52 +135,3 @@ a, button, [role="button"], [role="link"], input, textarea, select {
   --shadow-lg: 0 12px 32px rgba(26,26,46,0.12);
 }
 
-[data-theme="dark"] {
-  --color-bg:             #0f0f1a;
-  --color-surface:        #161628;
-  --color-surface-2:      #1c1c30;
-  --color-surface-offset: #131324;
-  --color-border:         #2a2a42;
-  --color-divider:        #222238;
-
-  --color-text:           #d5d5dd;
-  --color-text-muted:     #8a8a9c;
-  --color-text-faint:     #55556a;
-  --color-text-inverse:   #0f0f1a;
-
-  --color-accent:         #d4a843;
-  --color-accent-hover:   #e0b854;
-  --color-accent-active:  #ecc766;
-
-  --color-dark:           #d5d5dd;
-  --color-dark-surface:   #1c1c30;
-  --color-dark-lighter:   #252540;
-
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
-  --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --color-bg:             #0f0f1a;
-    --color-surface:        #161628;
-    --color-surface-2:      #1c1c30;
-    --color-surface-offset: #131324;
-    --color-border:         #2a2a42;
-    --color-divider:        #222238;
-    --color-text:           #d5d5dd;
-    --color-text-muted:     #8a8a9c;
-    --color-text-faint:     #55556a;
-    --color-text-inverse:   #0f0f1a;
-    --color-accent:         #d4a843;
-    --color-accent-hover:   #e0b854;
-    --color-accent-active:  #ecc766;
-    --color-dark:           #d5d5dd;
-    --color-dark-surface:   #1c1c30;
-    --color-dark-lighter:   #252540;
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
-    --shadow-lg: 0 12px 32px rgba(0,0,0,0.5);
-  }
-}
